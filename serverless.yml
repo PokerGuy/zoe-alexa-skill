@@ -1,17 +1,15 @@
 service: zoe-alexa-skill
 
-frameworkVersion: ">=1.4.0 <2.0.0"
-
 provider:
   name: aws
   runtime: nodejs6.10
-  region: us-west-2
+  region: us-east-1
   stage: prod
   timeout: 30
   memorySize: 128
 
 functions:
-  luckyNumber:
-    handler: handler.luckyNumber
+  zoeGlucose:
+    handler: handler.glucose
     events:
       - alexaSkill
