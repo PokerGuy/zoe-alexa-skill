@@ -36,7 +36,7 @@ module.exports.glucose = (event, context, callback) => {
                     default:
                         trend = 'no trend data';
                 }
-                say = `Zoe is at ${data.glucose} and ${trend}.`;
+                say = `Zoe is at ${data.glucose} and ${trend} `;
                 if (data.glucose >= 95 && data.glucose <= 150 && data.trend == 4) {
                     say += 'Rock on!';
                 } else if (data.glucose >= 285) {
